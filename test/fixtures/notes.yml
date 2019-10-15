@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  note: MyText
+  date: 2019-10-15 12:20:52
+  priority: MyString
+  user: one
+
+two:
+  title: MyString
+  note: MyText
+  date: 2019-10-15 12:20:52
+  priority: MyString
+  user: two
