@@ -6,10 +6,10 @@ fulano = User.create!({ email:"fulano@talentbrand.com", password:"senha123", fir
 date = Date.today - 15
 15.times do
   note = Note.create!({
-    title:"#{Faker::Verb.base} #{Faker::Relationship.familial}",
-    note: Faker::Lorem.paragraph,
+    title:"#{Faker::Verb.base.capitalize} #{Faker::Relationship.familial.downcase}",
+    note: Faker::Lorem.paragraph(sentence_count: 4, supplemental: false, random_sentences_to_add: 10),
     date: date,
-    priority: ["Alta", "Média", "Baixa"].sample,
+    priority: ["alta", "média", "baixa"].sample,
     user: fulano
   })
   p note

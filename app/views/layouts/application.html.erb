@@ -5,11 +5,10 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://use.fontawesome.com/7a4cabd9e8.js"></script>
   </head>
-
   <body>
     <%= render 'shared/navbar' %>
     <%= yield %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

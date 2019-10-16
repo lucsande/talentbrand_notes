@@ -1,0 +1,70 @@
+// note cards
+.card-note {
+  display: flex;
+  align-items: start;
+  margin-bottom: 8px;
+  background: white;
+  padding: 15px 10px 25px 0;
+  border: 1px solid rgb(220, 220, 220);
+  max-width: 700px;
+  border-radius: 5px;
+
+  p {
+    margin: 0;
+    line-height: 1.4;
+  }
+  small {
+    color: #7bbbce;
+    font-weight: lighter;
+  }
+
+  .card-note-priority {
+    display: flex;
+    margin: 2px 15px 0;
+    align-items: flex-start;
+    p {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: solid rgb(175, 175, 175) 0.5px;
+    }
+    .alta {
+      background-color: #ef6b6b;
+    }
+    .média {
+      background-color: #edd76a;
+    }
+    .baixa {
+      background-color: #bbea69;
+    }
+  }
+
+  .card-note-content {
+    flex-grow: 1;
+    padding: 0 2px;
+
+    .note-desc {
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &:hover .card-note-actions {
+    opacity: 1;
+  }
+  .card-note-actions {
+    opacity: 0;
+    display: flex;
+    transition: ease 0.3s;
+  }
+
+  a {
+    color: rgba(240, 105, 105, 0.5);
+    margin-left: 16px;
+    font-size: 14px;
+
+    &:hover {
+      color: rgba(240, 105, 105, 1);
+      text-decoration: none;
+    }
+  }
+}

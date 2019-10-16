@@ -16,8 +16,8 @@
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me,"Lembrar minhas credenciais" %>
     </div>
-    <%= f.button :submit, "Entrar", class: "btn-dark" %>
     <%= f.button :button, "Cancelar", type: "reset", class: "btn-outline-secondary" %>
+    <%= f.button :submit, "Entrar", class: "btn-dark" %>
       <% if devise_mapping.rememberable? %>
   <% end %>
   <% end %>

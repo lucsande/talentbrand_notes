@@ -15,8 +15,9 @@
 /* Custom bootstrap variables must be set or imported *before* bootstrap.*/
 @import "bootstrap";
 @import "font-awesome";
-@import "./components/navbar.scss";
-@import "./components/form.scss";
+@import "components/card";
+@import "components/form";
+@import "components/navbar";
 
 body {
   background-color: #f7fafc;
@@ -25,8 +26,4 @@ body {
 .content {
   height: 100vh;
   margin-top: 15rem;
-}
-
-.margin-navbar {
-  margin-top: 5rem;
 }

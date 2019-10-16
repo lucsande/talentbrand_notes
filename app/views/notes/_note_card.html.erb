@@ -1,0 +1,15 @@
+<div class="card-note">
+  <div class="card-note-priority">
+    <p class=<%= note.priority %> ></p>
+  </div> 
+  <div class="card-note-content">
+    <p><strong> <%= note.title %> </strong></p>
+    <p class="mb-2"><small> <%= note.date.strftime("%d/%m/%y - %Hh%M") %> </small></p>
+    <p class="note-desc"> <%= note.note%> </p>
+  </div>
+
+  <div class="card-note-actions">
+    <a href="#">Editar <i class="fas fa-pencil-alt"></i></a>
+    <a href="#">Deletar <i class="far fa-trash-alt"></i></a>
+  </div>
+</div>

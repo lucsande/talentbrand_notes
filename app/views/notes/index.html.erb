@@ -1,2 +1,11 @@
-<h1>Notes#index</h1>
-<p>Find me in app/views/notes/index.html.erb</p>
+<div class="margin-navbar">
+  <div class="d-flex flex-column align-items-center justify-content-center">
+    <h2>Bem vindo, <%= current_user.first_name %> </h2>
+    <p>Suas notas:</p>
+    <div>
+      <% @notes.map do |note| %>
+        <%= render 'note_card', note: note %>
+      <% end %>
+    </div>
+  </div>
+</div>
