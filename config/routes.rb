@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  authenticated :user do
+    root to: "notes#index"
+  end
+
   root to: 'pages#home'
 
   devise_for :users

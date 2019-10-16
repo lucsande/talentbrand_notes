@@ -1,3 +1,10 @@
-<div>
-    Bem vindo ao TomaNota!
+<div class="content">
+  <div class="d-flex flex-column align-items-center justify-content-center">
+    <h1>Bem vindo ao TomaNota!</h1>
+    <p>Não se esqueça de mais nada e foque no importante.</p>
+    <div class="row">
+      <%= link_to "Cadastrar", new_user_registration_path, class: "btn border-secondary bg-white mx-1" %>
+      <%= link_to "Entrar", new_user_session_path, class: "btn border-secondary bg-white mx-1" %>
+    </div>
+  </div>
 </div>

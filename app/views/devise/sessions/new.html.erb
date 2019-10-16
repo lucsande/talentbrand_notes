@@ -1,7 +1,6 @@
-<div class="container credentials-form">
+<div class="container credentials-form margin-navbar">
   <h2 style="text-align: center">Entrar</h2>
-
-  <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <%= f.error_notification %>
       <%= f.input :email,
                   label: "Email",

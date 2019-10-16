@@ -17,3 +17,16 @@
 @import "font-awesome";
 @import "./components/navbar.scss";
 @import "./components/form.scss";
+
+body {
+  background-color: #f7fafc;
+}
+
+.content {
+  height: 100vh;
+  margin-top: 15rem;
+}
+
+.margin-navbar {
+  margin-top: 5rem;
+}
