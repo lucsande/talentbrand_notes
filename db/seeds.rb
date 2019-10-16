@@ -1,7 +1,7 @@
 require 'faker'
 require 'date'
 
-fulano = User.create!({ email:"fulano@talentbrand.com", password:"senha123" })
+fulano = User.create!({ email:"fulano@talentbrand.com", password:"senha123", first_name: "Fulano", last_name: "Silva" })
 
 date = Date.today - 15
 15.times do
